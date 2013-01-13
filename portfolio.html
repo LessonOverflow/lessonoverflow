@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Lesson Overflow</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+
+</head>
+<body>
+
+
+    <nav class="top-bar">
+      <ul>
+        <!-- Title Area -->
+        <li class="name">
+          <h1>
+            <a href="#">
+            	Lesson Overflow
+            </a>
+          </h1>
+        </li>
+        <li class="toggle-topbar"><a href="#"></a></li>
+      </ul>
+
+      <section>
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a class="active" href="#">Item 1</a>
+            <ul class="dropdown">
+              <li><label>Section Name</label></li>
+              <li class="has-dropdown">
+                <a href="#" class="">Level 1, Has Dropdown</a>
+                <ul class="dropdown">
+                  <li><a href="#">Level 2</a></li>
+                  <li><a href="#">Level 2</a></li>
+                  <li class="has-dropdown"><a href="#">Level 2, Has Dropdown</a>
+                    <ul class="dropdown">
+                      <li><label>Section</label></li>
+                      <li><a href="#">Level 3</a></li>
+                      <li><a href="#">Level 3</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Level 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Level 2</a></li>
+                  <li><a href="#">Level 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 1</a></li>
+              <li class="divider"></li>
+              <li><label>Section Name</label></li>
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </li>
+          <li class="divider hide-for-tiny"></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider show-for-medium-and-up"></li>
+          <li class="has-dropdown">
+            <a href="#">Item 2</a>
+            <ul class="dropdown">
+              <li><label>Section Name</label></li>
+              <li><a href="#" class="">Level 1</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li class="divider"></li>
+              <li><label>Section Name</label></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li class="divider"></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+	<div class="row">
+		
+		<div class="four columns">
+			<img src="http://fakeimg.pl/200x200/?text=Student%20Face" alt="" class="th">		
+		</div>
+		<div class="eight columns">
+			<h3>Student Portfolio</h3>
+			<hr>
+				<ul class="list-none">
+					<li><strong>Name:</strong> O. Barrack</li>
+					<li><strong>Teacher:</strong> Linda Kim</li>
+					<li><strong>Grade:</strong> 4th</li>
+					<li><strong>Subject:</strong> Mathematics</li>
+				</ul>
+			<hr>
+			<h3>Common Core Standards</h3>
+			<div class="">
+			<h3 class="subtitle">Mathematics</h3>
+				<h4>Subtraction</h4>
+				<a href="index.html"><div class="radius progress success nine"><span class="meter nine"></span></div>
+				<a href="index.html" class="button secondary">View Recommendations</a>
+				<h4>Fractions</h4>
+				<a href="index.html"><div class="radius progress nine"><span class="meter eight"></span></div></a>
+				<a href="index.html" class="button secondary">View Recommendations</a>
+
+				<h4>Negative Numbers</h4>
+				<a href="index.html"><div class="radius progress alert nine"><span class="meter four"></span></div></a>
+				<a href="index.html" class="button secondary">View Recommendations</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Included JS Files (Uncompressed) -->
+	<script src="javascripts/foundation/jquery.js"></script>
+	
+	<script src="javascripts/foundation/jquery.cookie.js"></script>
+	
+	<script src="javascripts/foundation/jquery.event.move.js"></script>
+	
+	<script src="javascripts/foundation/jquery.event.swipe.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.joyride.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.magellan.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
+	
+	<script src="javascripts/foundation/jquery.placeholder.js"></script>
+	
+
+  <!-- Application Javascript, safe to override -->
+  <script src="javascripts/foundation/app.js"></script>
+</body>
+</html>
