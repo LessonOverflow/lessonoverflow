@@ -1,0 +1,77 @@
+<%= form_for(@resource) do |f| %>
+  <% if @resource.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@resource.errors.count, "error") %> prohibited this resource from being saved:</h2>
+
+      <ul>
+      <% @resource.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :common_core %><br />
+    <%= f.text_field :common_core %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :educational_use %><br />
+    <%= f.text_field :educational_use %>
+  </div>
+  <div class="field">
+    <%= f.label :in_language %><br />
+    <%= f.text_field :in_language %>
+  </div>
+  <div class="field">
+    <%= f.label :intended_end_use_role %><br />
+    <%= f.text_field :intended_end_use_role %>
+  </div>
+  <div class="field">
+    <%= f.label :interactivity_type %><br />
+    <%= f.text_field :interactivity_type %>
+  </div>
+  <div class="field">
+    <%= f.label :is_based_on_url %><br />
+    <%= f.text_field :is_based_on_url %>
+  </div>
+  <div class="field">
+    <%= f.label :learning_resource_type %><br />
+    <%= f.text_field :learning_resource_type %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :publisher_id %><br />
+    <%= f.text_field :publisher_id %>
+  </div>
+  <div class="field">
+    <%= f.label :time_required %><br />
+    <%= f.text_field :time_required %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :typical_age_range %><br />
+    <%= f.text_field :typical_age_range %>
+  </div>
+  <div class="field">
+    <%= f.label :use_rights_url %><br />
+    <%= f.text_field :use_rights_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

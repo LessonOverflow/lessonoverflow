@@ -1,0 +1,51 @@
+<h1>Listing resources</h1>
+
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Common core</th>
+    <th>Description</th>
+    <th>Educational use</th>
+    <th>In language</th>
+    <th>Intended end use role</th>
+    <th>Interactivity type</th>
+    <th>Is based on url</th>
+    <th>Learning resource type</th>
+    <th>Location</th>
+    <th>Publisher</th>
+    <th>Time required</th>
+    <th>Title</th>
+    <th>Typical age range</th>
+    <th>Use rights url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @resources.each do |resource| %>
+  <tr>
+    <td><%= resource.author %></td>
+    <td><%= resource.common_core %></td>
+    <td><%= resource.description %></td>
+    <td><%= resource.educational_use %></td>
+    <td><%= resource.in_language %></td>
+    <td><%= resource.intended_end_use_role %></td>
+    <td><%= resource.interactivity_type %></td>
+    <td><%= resource.is_based_on_url %></td>
+    <td><%= resource.learning_resource_type %></td>
+    <td><%= resource.location %></td>
+    <td><%= resource.publisher_id %></td>
+    <td><%= resource.time_required %></td>
+    <td><%= resource.title %></td>
+    <td><%= resource.typical_age_range %></td>
+    <td><%= resource.use_rights_url %></td>
+    <td><%= link_to 'Show', resource %></td>
+    <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+    <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Resource', new_resource_path %>

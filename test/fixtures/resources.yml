@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  author: MyString
+  common_core: MyString
+  description: MyText
+  educational_use: MyString
+  in_language: MyString
+  intended_end_use_role: MyString
+  interactivity_type: MyString
+  is_based_on_url: MyString
+  learning_resource_type: MyString
+  location: MyString
+  publisher_id: MyString
+  time_required: MyString
+  title: MyString
+  typical_age_range: MyString
+  use_rights_url: MyString
+
+two:
+  author: MyString
+  common_core: MyString
+  description: MyText
+  educational_use: MyString
+  in_language: MyString
+  intended_end_use_role: MyString
+  interactivity_type: MyString
+  is_based_on_url: MyString
+  learning_resource_type: MyString
+  location: MyString
+  publisher_id: MyString
+  time_required: MyString
+  title: MyString
+  typical_age_range: MyString
+  use_rights_url: MyString
