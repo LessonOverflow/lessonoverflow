@@ -106,6 +106,12 @@ h3.class-recomendation {
   background: #eee;
 }
 
+/* line 342, ../sass/_settings.scss */
+a.learnMore {
+  padding-right: 2em;
+  color: #333;
+}
+
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
 /* line 5, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.1.1/scss/foundation/common/_globals.scss */
