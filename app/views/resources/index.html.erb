@@ -1,56 +1,252 @@
-
-
-
-
-<!-- <h1>Listing resources</h1>
-
-<table>
-  <tr>
-    <th>Author</th>
-    <th>Common core</th>
-    <th>Description</th>
-    <th>Educational use</th>
-    <th>In language</th>
-    <th>Intended end use role</th>
-    <th>Interactivity type</th>
-    <th>Is based on url</th>
-    <th>Learning resource type</th>
-    <th>Location</th>
-    <th>Publisher</th>
-    <th>Time required</th>
-    <th>Title</th>
-    <th>Typical age range</th>
-    <th>Use rights url</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr> -->
-
-<% # @resources.each do |resource| %>
-<!--   <tr>
-    <td><%= resource.author %></td>
-    <td><%= resource.common_core %></td>
-    <td><%= resource.description %></td>
-    <td><%= resource.educational_use %></td>
-    <td><%= resource.in_language %></td>
-    <td><%= resource.intended_end_use_role %></td>
-    <td><%= resource.interactivity_type %></td>
-    <td><%= resource.is_based_on_url %></td>
-    <td><%= resource.learning_resource_type %></td>
-    <td><%= resource.location %></td>
-    <td><%= resource.publisher_id %></td>
-    <td><%= resource.time_required %></td>
-    <td><%= resource.title %></td>
-    <td><%= resource.typical_age_range %></td>
-    <td><%= resource.use_rights_url %></td>
-    <td><%= link_to 'Show', resource %></td>
-    <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
-    <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr> -->
-<% # end %>
-
-<!-- </table>
-
-<br /> -->
-
-<%= # link_to 'New Resource', new_resource_path %>
+<div class="row">
+  <div class="four columns">
+    <h3 class="class-recomendation">
+      Subject
+    </h3>
+    <dl class="vertical tabs">
+      <dd class="active">
+        <a href="#vertical1">Math</a>
+      </dd>
+      <dd>
+        <a href="#vertical2">Science</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Social Studies</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">English Language Arts</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Foreign Language</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Enrichment</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Browse All Subjects</a>
+      </dd>
+    </dl>
+    <h3>
+      Worksheet Source
+    </h3>
+    <ul class="company-select list-none">
+      <li class="">
+        <label for="radio1"><input name="radio2" type="radio" id="radio4"><img src="images/company/company1.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio2"><input name="radio2" type="radio" id="radio42"><img src="images/company/company2.png" alt=""></label>
+      </li>
+      <li class="selected">
+        <label for="radio3" class=""><input checked name="radio2" type="radio" id="radio43"><img src="images/company/company3.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio4"><input name="radio2" type="radio" id="radio44"><img src="images/company/company4.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio5"><input name="radio2" type="radio" id="radio45"><img src="images/company/company5.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio6"><input name="radio2" type="radio" id="radio46"><img src="images/company/company6.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio7"><input name="radio2" type="radio" id="radio47"><img src="images/company/company7.png" alt=""></label>
+      </li>
+    </ul>
+  </div>
+  <div class="eight columns">
+    <div class="hero">
+      <h2 class="text-center">
+        Personalized Materials
+      </h2>
+      <p>
+        Sed ultricies mollis dignissim. In massa velit, auctor eget laoreet id, tristique a arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum elit at diam dapibus viverra. Suspendisse vel blandit urna. Nunc quis accumsan velit. Morbi nec libero non nisl dictum fermentum eu ac sapien.
+      </p>
+      <div class="">
+        <ul class="button-group even two-up">
+          <li>
+            <a href="#" class="button">Recommendations to Students</a>
+          </li>
+          <li>
+            <a href="#" class="button secondary">Classwide Recommendations</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <dl class="sub-nav">
+        <dt>Filter:</dt>
+        <dd class="active"><a href="#">All</a></dd>
+        <dd><a href="#">Multiplication</a></dd>
+        <dd><a href="#">Division</a></dd>
+        <dd><a href="#">Addition</a></dd>
+        <dd><a href="#">Subtraction</a></dd>
+      </dl>
+      <div class="row worksheet-preview text-center">
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet1.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet1">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet2.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet2">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet3.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet3">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet4.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet4">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row worksheet-preview text-center">
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet5.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet1">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet6.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet2">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet7.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet3">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="three columns single">
+          <div class="">
+            <h3>
+              7.Ns.1d
+            </h3>
+            <p>
+              <img src="images/worksheet/worksheet8.png" alt="">
+            </p>
+            <h4>
+              From: Better Lesson
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="#" class="" data-reveal-id="myWorksheet4">
+              <li class="button tiny">View
+              </li></a>
+              <li class="button secondary tiny">Download
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div><!-- Included JS Files (Uncompressed) -->
