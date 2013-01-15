@@ -3,7 +3,13 @@ Lessonoverflow::Application.routes.draw do
 
   root :to => 'resources#index'
 
-
+  namespace :api do
+    namespace :v1 do
+      # realize it sounds tricky to use resource as a model...
+      # :resource represents the name of our model for storing teacher resource items
+      resources :resources
+    end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

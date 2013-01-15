@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130113233122) do
+ActiveRecord::Schema.define(:version => 20130114232520) do
+
+  create_table "api_keys", :force => true do |t|
+    t.string   "access_token"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "resources", :force => true do |t|
     t.string   "author"
