@@ -35,5 +35,6 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:location => resource_url})
+  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic"})
 end
+
