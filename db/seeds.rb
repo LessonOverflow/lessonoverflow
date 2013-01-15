@@ -5,6 +5,63 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+Resource.new
+learning_resource_type = "video"
+source_url = "https://www.khanacademy.org/math/arithmetic"
+resources = [
+  {:url => "https://www.youtube.com/watch?feature=player_embedded&v=AuX7nPBqDts",:title => "addition and subtration"},
+  {:url => "https://www.youtube.com/watch?feature=player_embedded&v=xO_1bYgoQvA",:title => "multiplication and division"},
+  {:url => "https://www.youtube.com/watch?feature=player_embedded&v=3XOt1fjWKi8", :title => "numerator and denominator of a fraction"},
+  {:url => "http://www.youtube.com/watch?v=tj9oLZYA-AQ", :title => "subtracting mixed numbers word problem"}
+]
+resources.each do |resource|
+  Resource.new (
+    :url => resource[:url],
+    :learning_resource_type => learning_resource_type,
+    :title => resource[:title],
+    :is_based_on_url => source_url
+  )
+end
+
+resources = [
+
+{
+  :url => "http://admin.brightcove.com/viewer/us20130114.1629/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ~~%2CAAABJMwIIBk~%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&purl=http%3A%2F%2Fwisply.heroku.com%2F&%40videoPlayer=1804707302001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804707302001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683824609&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804707302001&width=630&wmode=opaque",
+  :title => "divide a whole number by a fraction",
+  :difficulty => "easy",
+  :time_required => "P4M48S" # this is how they want time? http://en.wikipedia.org/wiki/ISO_8601#Durations
+},
+{
+  :url => "http://admin.brightcove.com/viewer/us20130114.1629/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ%7E%7E%2CAAABJMwIIBk%7E%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&%40videoPlayer=1804707302001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804707302001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683824609&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804707302001&width=630&wmode=opaque",
+  :title => "Subtracting mixed numbers (easy) ",
+  :time_required => "4:48",
+  :difficulty => "easy"
+},
+{
+  :url => "http://admin.brightcove.com/viewer/us20130114.1629/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ~~%2CAAABJMwIIBk~%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&purl=http%3A%2F%2Fwisply.heroku.com%2F&%40videoPlayer=1804707302001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804707302001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683824609&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804707302001&width=630&wmode=opaque"
+  :title => "divide mixed numbers (easy)"
+  :
+
+},
+{
+  :url => "http://admin.brightcove.com/viewer/us20121203.0945/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ~~%2CAAABJMwIIBk~%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&%40videoPlayer=1804346217001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804346217001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683078930&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804346217001&width=630&wmode=opaque"
+} :title => "adding mixed numbers (easy)"
+]
+
+resources.each do |resource|
+  Resource.new (
+    :url => resource[:url],
+    :learning_resource_type => learning_resource_type,
+    :title => resource[:title],
+    :is_based_on_url => "better lesson "
+  )
+end
+
+## The following resources are 50 addition worksheets without rerouping and 50 addition with regrouping.
+learning_resource_type = "handout"
 resources = [
   "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg64_001.pdf",
   "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg64_002.pdf",
@@ -75,7 +132,7 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:common_core => "K.OA.2", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :time_required => "20 minutes", :description => "Add one digit with no regrouping. PDF worksheet with 100 questions and answers", :typical_age_range => "6-8 years"})
+  Resource.create({:educationalUse => "assignment", :common_core => "K.OA.2", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :time_required => "P20M", :description => "Add one digit with no regrouping. PDF worksheet with 100 questions and answers", :typical_age_range => "6-8 years"})
 end
 
 
@@ -109,10 +166,10 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. PDF worksheet with 12 questions and answers", :typical_age_range => "6-8 years", :time_required => "8 minutes"})
+  Resource.create({:educationalUse => "assignment", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. PDF worksheet with 12 questions and answers", :typical_age_range => "6-8 years", :time_required => "8 minutes"})
 end
 
-Resource.create({:location => "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_all.pdf", :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. 20 unique PDF worksheets with 12 questions and answers for each worksheet", :typical_age_range => "6-8 years"})
+Resource.create({:educationalUse => "assignment", :location => "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_all.pdf", :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. 20 unique PDF worksheets with 12 questions and answers for each worksheet", :typical_age_range => "6-8 years"})
 
 description = "One-Digit Addition with Regrouping"
 base_name = "add01srg64"
@@ -148,7 +205,7 @@ resources = [
 
 
 resources.each do |resource_url|
-  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "#{description}. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
+  Resource.create({:educationalUse => "assignment", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "#{description}. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
 end
 
 
