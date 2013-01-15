@@ -35,6 +35,120 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic"})
+  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
 end
 
+resources = [
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_001.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_002.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_003.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_004.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_005.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_006.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_007.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_008.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_009.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_010.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_011.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_012.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_013.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_014.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_015.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_016.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_017.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_018.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_019.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_020.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_021.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_022.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_023.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_024.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_025.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01nrg_026.pdf"
+]
+
+resources.each do |resource_url|
+  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :time_required => "20 minutes", :description => "Add one digit with no regrouping. PDF worksheet with 100 questions and answers", :typical_age_range => "6-8 years"})
+end
+
+
+resources = [
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_001.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_002.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_003.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_004.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_005.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_006.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_007.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_008.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_009.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_010.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_011.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_012.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_013.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_014.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_015.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_016.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_017.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_018.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_019.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_020.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_021.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_022.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_023.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_024.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_025.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_026.pdf"
+]
+
+resources.each do |resource_url|
+  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. PDF worksheet with 12 questions and answers", :typical_age_range => "6-8 years", :time_required => "8 minutes"})
+end
+
+Resource.create({:location => "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_all.pdf", :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. 20 unique PDF worksheets with 12 questions and answers for each worksheet", :typical_age_range => "6-8 years"})
+
+description = "One-Digit Addition with Regrouping"
+base_name = "add01srg64"
+
+resources = [
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_001.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_002.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_003.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_004.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_005.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_006.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_007.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_008.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_009.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_010.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_011.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_012.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_013.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_014.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_015.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_016.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_017.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_018.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_019.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_020.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_021.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_022.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_023.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_024.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_025.pdf",
+  "https://s3.amazonaws.com/lessonOverFlow/arithmetic/#{base_name}_026.pdf"
+]
+
+
+resources.each do |resource_url|
+  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "#{description}. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
+end
+:category, :core_id, :state_standard, :sub_category
+
+CommonCore.create(:category => "Operations And Algebraic Thinking",
+:state_standard => "Use place value understanding and properties of operations to add and subtract.",
+:sub_category => "Understand Addition As Putting Together And Adding To, And Under- Stand Subtraction As Taking Apart And Taking From.",
+:core_id => "K.OA.2"
+)
+
+# "Solve addition and subtraction word problems, and add and subtract within 10, e.g., by using objects or drawings to represent the problem."
