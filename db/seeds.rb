@@ -35,7 +35,14 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
+  Resource.create({
+    :common_core => "K.OA.2",
+    :location => resource_url,
+    :author => "http://www.math-drills.com/",
+    :title => "arithmetic",
+    :description => "Add one digit with no regrouping. PDF worksheet with 64 questions and answers",
+    :typical_age_range => "6-8 years"
+    })
 end
 
 resources = [
@@ -68,7 +75,7 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :time_required => "20 minutes", :description => "Add one digit with no regrouping. PDF worksheet with 100 questions and answers", :typical_age_range => "6-8 years"})
+  Resource.create({:common_core => "K.OA.2", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :time_required => "20 minutes", :description => "Add one digit with no regrouping. PDF worksheet with 100 questions and answers", :typical_age_range => "6-8 years"})
 end
 
 
@@ -143,12 +150,13 @@ resources = [
 resources.each do |resource_url|
   Resource.create({:location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "#{description}. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
 end
-:category, :core_id, :state_standard, :sub_category
 
-CommonCore.create(:category => "Operations And Algebraic Thinking",
-:state_standard => "Use place value understanding and properties of operations to add and subtract.",
-:sub_category => "Understand Addition As Putting Together And Adding To, And Under- Stand Subtraction As Taking Apart And Taking From.",
-:core_id => "K.OA.2"
+
+CommonCore.create(
+  :category => "Operations And Algebraic Thinking",
+  :state_standard => "Use place value understanding and properties of operations to add and subtract.",
+  :sub_category => "Understand Addition As Putting Together And Adding To, And Under- Stand Subtraction As Taking Apart And Taking From.",
+  :core_id => "K.OA.2"
 )
 
 # "Solve addition and subtraction word problems, and add and subtract within 10, e.g., by using objects or drawings to represent the problem."
