@@ -41,3 +41,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+
+# me wants admin
+gem 'activeadmin'

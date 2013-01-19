@@ -3,6 +3,7 @@ module Api
     class ResourcesController < ApplicationController
       respond_to :json
 
+      # return all resources
       def index
         respond_with Resource.all
       end
