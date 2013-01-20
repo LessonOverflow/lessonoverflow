@@ -132,7 +132,7 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:educationalUse => "assignment", :common_core => "K.OA.2", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :time_required => "P20M", :description => "Add one digit with no regrouping. PDF worksheet with 100 questions and answers", :typical_age_range => "6-8 years"})
+  Resource.create({:educational_use => "assignment", :common_core => "K.OA.2", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :time_required => "P20M", :description => "Add one digit with no regrouping. PDF worksheet with 100 questions and answers", :typical_age_range => "6-8 years"})
 end
 
 
@@ -166,10 +166,10 @@ resources = [
 ]
 
 resources.each do |resource_url|
-  Resource.create({:educationalUse => "assignment", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. PDF worksheet with 12 questions and answers", :typical_age_range => "6-8 years", :time_required => "8 minutes"})
+  Resource.create({:educational_use => "assignment", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. PDF worksheet with 12 questions and answers", :typical_age_range => "6-8 years", :time_required => "8 minutes"})
 end
 
-Resource.create({:educationalUse => "assignment", :location => "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_all.pdf", :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. 20 unique PDF worksheets with 12 questions and answers for each worksheet", :typical_age_range => "6-8 years"})
+Resource.create({:educational_use => "assignment", :location => "https://s3.amazonaws.com/lessonOverFlow/arithmetic/add01srg12_all.pdf", :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "Add one digit with no regrouping. 20 unique PDF worksheets with 12 questions and answers for each worksheet", :typical_age_range => "6-8 years"})
 
 description = "One-Digit Addition with Regrouping"
 base_name = "add01srg64"
@@ -205,7 +205,7 @@ resources = [
 
 
 resources.each do |resource_url|
-  Resource.create({:educationalUse => "assignment", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "#{description}. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
+  Resource.create({:educational_use => "assignment", :location => resource_url, :author => "http://www.math-drills.com/", :title => "arithmetic", :description => "#{description}. PDF worksheet with 64 questions and answers", :typical_age_range => "6-8 years"})
 end
 
 
