@@ -217,3 +217,16 @@ CommonCore.create(
 )
 
 # "Solve addition and subtraction word problems, and add and subtract within 10, e.g., by using objects or drawings to represent the problem."
+
+
+
+# garys first code
+resource_url = "https://s3.amazonaws.com/lessonOverFlow/division/division_divisibility_020510_2_001.pdf"
+
+
+Resource.create({
+  :educational_use => "assignment", :location => resource_url, 
+  :author => "http://www.math-drills.com/", :title => "Division and Divisiblity",
+  :description => "PDF worksheet divisibility of 2's, 5's, and 10's with 120 questions", :typical_age_range => "11-12",
+  :time_required => "P45M" # this is how they want time? http://en.wikipedia.org/wiki/ISO_8601#Durations
+})
