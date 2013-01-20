@@ -8,7 +8,7 @@
 
 
 
-Resource.new
+
 learning_resource_type = "video"
 source_url = "https://www.khanacademy.org/math/arithmetic"
 resources = [
@@ -17,13 +17,14 @@ resources = [
   {:url => "https://www.youtube.com/watch?feature=player_embedded&v=3XOt1fjWKi8", :title => "numerator and denominator of a fraction"},
   {:url => "http://www.youtube.com/watch?v=tj9oLZYA-AQ", :title => "subtracting mixed numbers word problem"}
 ]
+
 resources.each do |resource|
-  Resource.new (
-    :url => resource[:url],
-    :learning_resource_type => learning_resource_type,
-    :title => resource[:title],
-    :is_based_on_url => source_url
-  )
+  Resource.new ({
+      :location => resource[:url],
+      :learning_resource_type => learning_resource_type,
+      :title => resource[:title],
+      :is_based_on_url => source_url
+    })
 end
 
 resources = [
@@ -41,23 +42,22 @@ resources = [
   :difficulty => "easy"
 },
 {
-  :url => "http://admin.brightcove.com/viewer/us20130114.1629/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ~~%2CAAABJMwIIBk~%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&purl=http%3A%2F%2Fwisply.heroku.com%2F&%40videoPlayer=1804707302001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804707302001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683824609&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804707302001&width=630&wmode=opaque"
+  :url => "http://admin.brightcove.com/viewer/us20130114.1629/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ~~%2CAAABJMwIIBk~%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&purl=http%3A%2F%2Fwisply.heroku.com%2F&%40videoPlayer=1804707302001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804707302001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683824609&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804707302001&width=630&wmode=opaque",
   :title => "divide mixed numbers (easy)"
-  :
-
 },
 {
-  :url => "http://admin.brightcove.com/viewer/us20121203.0945/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ~~%2CAAABJMwIIBk~%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&%40videoPlayer=1804346217001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804346217001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683078930&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804346217001&width=630&wmode=opaque"
-} :title => "adding mixed numbers (easy)"
+  :url => "http://admin.brightcove.com/viewer/us20121203.0945/BrightcoveBootloader.swf?playerID=1262030798001&playerKey=AQ~~%2CAAABJMwIIBk~%2CRDHV1F-BfRWDKMQ6uxnp4h4AYwpvkX4_&secureConnections=false&%40videoPlayer=1804346217001&aspect_ratio=1.5&autoStart=&bgcolor=%23FFFFFF&debuggerID=&dynamicStreaming=true&flashID=bc-1804346217001&height=420&htmlFallback=true&includeAPI=true&isUI=true&isVid=true&startTime=1354683078930&templateErrorHandler=BC.onPlayerError&templateLoadHandler=BC.onPlayerLoaded_1804346217001&width=630&wmode=opaque",
+  :title => "adding mixed numbers (easy)"
+}
 ]
 
 resources.each do |resource|
-  Resource.new (
-    :url => resource[:url],
-    :learning_resource_type => learning_resource_type,
-    :title => resource[:title],
-    :is_based_on_url => "better lesson "
-  )
+  Resource.new ({
+        :location => resource[:url],
+        :learning_resource_type => learning_resource_type,
+        :title => resource[:title],
+        :is_based_on_url => "http://www.betterlesson.com"
+      })
 end
 
 ## The following resources are 50 addition worksheets without rerouping and 50 addition with regrouping.
