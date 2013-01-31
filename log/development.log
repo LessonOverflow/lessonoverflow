@@ -31455,7 +31455,10 @@ Started GET "/assets/company/company9.png" for 127.0.0.1 at 2013-01-25 09:17:45 
 Served asset /company/company9.png - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1684373391c28b2fa60fa86462a087df04c5e56c
 
 
 Started GET "/javascripts/foundation/modernizr.foundation.js" for 127.0.0.1 at 2013-01-26 11:15:49 -0800
@@ -31820,4 +31823,7 @@ Served asset /foundation/jquery.placeholder.js - 200 OK (47ms)
 Started GET "/assets/foundation/app.js" for 127.0.0.1 at 2013-01-26 11:19:21 -0800
 Compiled foundation/app.js  (0ms)  (pid 40345)
 Served asset /foundation/app.js - 200 OK (11ms)
+<<<<<<< HEAD
+>>>>>>> 1684373391c28b2fa60fa86462a087df04c5e56c
+=======
 >>>>>>> 1684373391c28b2fa60fa86462a087df04c5e56c
