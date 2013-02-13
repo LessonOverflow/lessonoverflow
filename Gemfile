@@ -14,7 +14,10 @@ group :production do
   gem 'thin'
 end
 
-
+group :test do
+  gem 'rspec'
+  gem 'jasmine'
+end
 
 
 # Gems used only for assets and not required
@@ -33,7 +36,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'backbone-rails'
+gem 'backbone-on-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
