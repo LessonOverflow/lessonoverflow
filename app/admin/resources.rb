@@ -1,4 +1,4 @@
 ActiveAdmin.register Resource do
-  filter :common_core, :collection => proc { CommmonCore.all }, :as => :select
+  filter :common_core, :collection => proc { CommonCore.all }, :as => :select
 
 end
