@@ -1,4 +1,6 @@
 Lessonoverflow::Application.routes.draw do
+  get "main/index"
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -6,6 +8,8 @@ Lessonoverflow::Application.routes.draw do
   resources :resources
 
   root :to => 'resources#index'
+
+  resources :main
 
   namespace :api do
     namespace :v1 do
