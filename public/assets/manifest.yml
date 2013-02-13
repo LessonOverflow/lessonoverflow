@@ -43,6 +43,8 @@ company/company8.png: company/company8-bfae56a0f36c2e6d244c1de026510062.png
 company/company8/index.png: company/company8-bfae56a0f36c2e6d244c1de026510062.png
 company/company9.png: company/company9-b2b48abf7914f5b7067ae56005b62c08.png
 company/company9/index.png: company/company9-b2b48abf7914f5b7067ae56005b62c08.png
+finalist-icon.png: finalist-icon-8800a7d176cda3f42a93ec35230f0e63.png
+finalist-icon/index.png: finalist-icon-8800a7d176cda3f42a93ec35230f0e63.png
 foundation/orbit/bullets.jpg: foundation/orbit/bullets-65b1e40f1b679cfb3628068912625130.jpg
 foundation/orbit/bullets/index.jpg: foundation/orbit/bullets-65b1e40f1b679cfb3628068912625130.jpg
 foundation/orbit/left-arrow-small.png: foundation/orbit/left-arrow-small-1b3459cf73d4a471bb2f1d045117d4a9.png
@@ -91,14 +93,16 @@ worksheet/worksheet7.png: worksheet/worksheet7-e23c0883008d304453e6814279f481be.
 worksheet/worksheet7/index.png: worksheet/worksheet7-e23c0883008d304453e6814279f481be.png
 worksheet/worksheet8.png: worksheet/worksheet8-e8e8b3ddadd15fc96b8f8253cf857382.png
 worksheet/worksheet8/index.png: worksheet/worksheet8-e8e8b3ddadd15fc96b8f8253cf857382.png
-active_admin.js: active_admin-615f53605989f58aefd67f21b1661ab2.js
-active_admin/index.js: active_admin-615f53605989f58aefd67f21b1661ab2.js
-application.js: application-3bd6a127ceb08e4475c347246b690573.js
-application/index.js: application-3bd6a127ceb08e4475c347246b690573.js
+wtf.png: wtf-e70103d351b2c43f86b0a203fa347340.png
+wtf/index.png: wtf-e70103d351b2c43f86b0a203fa347340.png
+active_admin.js: active_admin-76495de5f9a0a6af340457a8d11e1130.js
+active_admin/index.js: active_admin-76495de5f9a0a6af340457a8d11e1130.js
+application.js: application-9deacf69f2c375f47bca0949a50f965f.js
+application/index.js: application-9deacf69f2c375f47bca0949a50f965f.js
 active_admin.css: active_admin-f58fc98e42733be6473403cf53156e11.css
 active_admin/index.css: active_admin-f58fc98e42733be6473403cf53156e11.css
-application.css: application-4c7f35d6fe65732cde1e988567b16bac.css
-application/index.css: application-4c7f35d6fe65732cde1e988567b16bac.css
+application.css: application-d6f6cfeec91010a506f45b4a08e54c49.css
+application/index.css: application-d6f6cfeec91010a506f45b4a08e54c49.css
 active_admin/admin_notes_icon.png: active_admin/admin_notes_icon-25b05cd8197f7a271d0624853a6dbdd5.png
 active_admin/admin_notes_icon/index.png: active_admin/admin_notes_icon-25b05cd8197f7a271d0624853a6dbdd5.png
 active_admin/datepicker/datepicker-header-bg.png: active_admin/datepicker/datepicker-header-bg-6f0baad739953cb1a0413c031841e82f.png
@@ -125,3 +129,5 @@ active_admin/pages/application.js: active_admin/pages/application-9962e9eb4723fd
 active_admin/pages/application/index.js: active_admin/pages/application-9962e9eb4723fd98f06bcc5dd97d3416.js
 active_admin/print.css: active_admin/print-80ebe25ed30c2f719a2720c7dffad181.css
 active_admin/print/index.css: active_admin/print-80ebe25ed30c2f719a2720c7dffad181.css
+jquery.min.map: jquery.min-959a5819c76e1508f5a8655c289c0de8.map
+jquery/index.min.map: jquery.min-959a5819c76e1508f5a8655c289c0de8.map

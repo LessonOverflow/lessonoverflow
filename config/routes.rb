@@ -14,6 +14,7 @@ Lessonoverflow::Application.routes.draw do
       resources :resources
     end
   end
+  # match "/404" :to => "errors#not_found"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

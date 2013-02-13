@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130119022306) do
+ActiveRecord::Schema.define(:version => 20130213072242) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -80,5 +80,15 @@ ActiveRecord::Schema.define(:version => 20130119022306) do
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
   end
+
+  create_table "tagged_resources", :force => true do |t|
+    t.integer  "resource_id"
+    t.integer  "common_core_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "tagged_resources", ["common_core_id"], :name => "index_tagged_resources_on_common_core_id"
+  add_index "tagged_resources", ["resource_id"], :name => "index_tagged_resources_on_resource_id"
 
 end
