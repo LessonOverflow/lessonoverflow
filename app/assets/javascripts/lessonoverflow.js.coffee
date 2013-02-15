@@ -3,7 +3,9 @@ window.Lessonoverflow =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  init: ->
+    new Lessonoverflow.Routers.Resources()
+    Backbone.history.start()
 
 $(document).ready ->
-  Lessonoverflow.initialize()
+  Lessonoverflow.init()

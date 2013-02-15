@@ -2,8 +2,11 @@ class Lessonoverflow.Routers.Resources extends Backbone.Router
   routes:
     '': 'index'
 
+  initialize: ->
+    @collection = new Lessonoverflow.Collections.Resources
+    @collection.fetch()
+
   index: ->
-    alert "home page"
-    l = new Lessonoverflow.Collections.Resources
-    l.fetch()
-    alert "found #{l.entries} resources in api"
+    view = new Lessonoverflow.Views.ResourcesIndex(collection: @collection)
+    $('#container').html(view.render().el)
+

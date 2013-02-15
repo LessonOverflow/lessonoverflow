@@ -1,0 +1,8 @@
+<h1> Resources! </h1>
+<ul>
+<% console.log @collection.models %>
+<% console.log @collection %>
+<% for foo in @collection.models: %>
+   <li> <%= foo.get('description') %> </li>
+<% end %>
+</ul>
