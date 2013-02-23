@@ -1,8 +1,122 @@
-<h1> Resources! </h1>
-<ul>
-<% console.log @collection.models %>
-<% console.log @collection %>
+<div class="row">
+  <div class="four columns">
+    <h3 class="class-recomendation">
+      Subject
+    </h3>
+    <dl class="vertical tabs">
+      <dd class="active">
+        <a href="#vertical1">Math</a>
+      </dd>
+      <dd>
+        <a href="#vertical2">Science</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Social Studies</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">English Language Arts</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Foreign Language</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Enrichment</a>
+      </dd>
+      <dd>
+        <a href="#vertical3">Browse All Subjects</a>
+      </dd>
+    </dl>
+    <h3>
+      Worksheet Source
+    </h3>
+    <ul class="company-select list-none">
+      <li class="">
+        <label for="radio1"><input name="radio2" type="radio" id="radio4"><img src="assets/company/company1.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio2"><input name="radio2" type="radio" id="radio42"><img src="assets/company/company2.png" alt=""></label>
+      </li>
+      <li class="selected">
+        <label for="radio3" class=""><input checked name="radio2" type="radio" id="radio43"><img src="assets/company/company3.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio4"><input name="radio2" type="radio" id="radio44"><img src="assets/company/company4.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio5"><input name="radio2" type="radio" id="radio45"><img src="assets/company/company5.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio6"><input name="radio2" type="radio" id="radio46"><img src="assets/company/company6.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio7"><input name="radio2" type="radio" id="radio47"><img src="assets/company/company7.png" alt=""></label>
+      </li>
+      <li class="">
+        <label for="radio7"><input name="radio2" type="radio" id="radio47"><img src="assets/company/company9.png" alt=""></label>
+      </li>
+    </ul>
+  </div>
+  <div class="eight columns">
+    <div class="hero">
+      <h2 class="text-center">
+        Personalized Materials
+      </h2>
+      <p>
+        Some personalized learning resources gathered from our growing list are shown below.
+      </p>
+      <div class="">
+        <ul class="button-group even two-up">
+          <li>
+            <a href="#" class="button">Recommendations to Students</a>
+          </li>
+          <li>
+            <a href="#" class="button secondary">Classwide Recommendations</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <dl class="sub-nav">
+        <dt>Filter:</dt>
+        <dd class="active"><a href="#">All</a></dd>
+        <dd><a href="#">Multiplication</a></dd>
+        <dd><a href="#">Division</a></dd>
+        <dd><a href="#">Addition</a></dd>
+        <dd><a href="#">Subtraction</a></dd>
+      </dl>
+      <div class="row worksheet-preview text-center">
+
 <% for foo in @collection.models: %>
-   <li> <%= foo.get('description') %> </li>
+
+
+   <div class="three columns single">
+          <div class="">
+            <h3>
+              <%= foo.get('description') %>
+            </h3>
+            <p>
+              <img src="assets/worksheet/worksheet2.png" alt="">
+            </p>
+            <h4>
+              From: <%=  foo.get('author') %>
+            </h4>
+            <ul class="even two-up button-group">
+              <a href="/resources/<%= foo.get('id') %>" class="" data-reveal-id="myWorksheet<%= foo.get('id') %>">
+              <li class="button tiny">View
+              </li></a>
+               <a href="<%= foo.get('location') %>" class="" >
+              <li class="button secondary tiny">Download
+              </li>
+              </a>
+            </ul>
+          </div>
+    </div>
+
 <% end %>
-</ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div><!-- Included JS Files (Uncompressed) -->
