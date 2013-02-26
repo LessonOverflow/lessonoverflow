@@ -7,6 +7,8 @@ gem 'rails', '3.2.9'
 
 group :development do
   gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :production do
@@ -14,11 +16,19 @@ group :production do
   gem 'thin'
 end
 
-group :test do
-  gem 'rspec'
-  gem 'jasmine'
-end
+# This is in both groups so rake tasks work properly
+gem 'rspec-rails', :group => [:development, :test]
 
+group :test do
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'guard-rspec'
+  gem 'spork'
+  gem 'guard-spork'
+  gem 'capybara'
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'ffaker' # Faster version of faker
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
