@@ -2,6 +2,8 @@ Lessonoverflow::Application.routes.draw do
   get "pages/core_values"
 
   get "pages/show"
+  
+  get "pages/about"
 
   ActiveAdmin.routes(self)
 
