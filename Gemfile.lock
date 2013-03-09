@@ -92,6 +92,12 @@ GEM
       railties (~> 3.1)
       warden (~> 1.2.1)
     diff-lcs (1.2.1)
+    eco (1.0.0)
+      coffee-script
+      eco-source
+      execjs
+    eco-source (1.1.0.rc.1)
+    ejs (1.1.1)
     erubis (2.7.0)
     eventmachine (1.0.0)
     execjs (1.4.0)
@@ -126,12 +132,6 @@ GEM
     inherited_resources (1.3.1)
       has_scope (~> 0.5.0)
       responders (~> 0.6)
-    jasmine (1.3.1)
-      jasmine-core (~> 1.3.1)
-      rack (~> 1.0)
-      rspec (>= 1.3.1)
-      selenium-webdriver (>= 0.1.3)
-    jasmine-core (1.3.1)
     journey (1.0.4)
     jquery-rails (2.2.0)
       railties (>= 3.0, < 5.0)
@@ -268,6 +268,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  backbone-on-rails
   better_errors
   binding_of_caller
   capybara
