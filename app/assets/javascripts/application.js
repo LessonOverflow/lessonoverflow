@@ -9,13 +9,11 @@
 //
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
-//
-
 //= require jquery
 //= require jquery_ujs
-//= require foundation
 //= require underscore
 //= require backbone
+//= require active_admin
 //= require lessonoverflow
 //= require_tree ../templates
 //= require_tree ./models
@@ -23,3 +21,4 @@
 //= require_tree ./views
 //= require_tree ./routers
 //= require_tree .
+
