@@ -12,8 +12,8 @@
 //
 
 //= require jquery
-//= require foundation
 //= require jquery_ujs
+//= require foundation
 //= require underscore
 //= require backbone
 //= require lessonoverflow
