@@ -29,6 +29,7 @@ group :test do
   gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
   gem 'ffaker' # Faster version of faker
 end
+gem 'rb-fsevent'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -37,7 +38,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   gem 'compass-rails'
-  gem 'zurb-foundation'
+  # gem 'zurb-foundation'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -48,7 +49,7 @@ end
 gem 'jquery-rails'
 gem 'backbone-on-rails'
 
-gem 'rb-fsevent'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
