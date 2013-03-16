@@ -11,8 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
-//= require foundation
 //= require jquery
+//= require foundation
 //= require jquery_ujs
 //= require underscore
 //= require backbone
