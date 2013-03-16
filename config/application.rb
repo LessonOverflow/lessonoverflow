@@ -40,7 +40,7 @@ module Lessonoverflow
     config.encoding = "utf-8"
 
     #  for heroku to precompile for us...
-    config.assets.initialize_on_precompile = false
+    # config.assets.initialize_on_precompile = false
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
