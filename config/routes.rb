@@ -1,6 +1,12 @@
 Lessonoverflow::Application.routes.draw do
   get "main/index"
 
+  get "pages/core_values"
+
+  get "pages/show"
+  
+  get "pages/about"
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
