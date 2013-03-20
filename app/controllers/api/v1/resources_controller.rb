@@ -5,7 +5,15 @@ module Api
 
       # return all resources
       def index
-        respond_with Resource.all
+        if params[:tagged] == true
+          @resources = Resource.tagged?
+        else
+          @resources = Resource.all
+        end
+        respond_to do |format|
+          format.html # index.html.erb
+          format.json { render json: @resources }
+        end      
       end
 
       def show
