@@ -5,7 +5,8 @@ module Api
 
       # return all resources
       def index
-        if params[:tagged] == true
+        Rails.logger.info "params.inspect"
+        if params[:tagged]
           @resources = Resource.tagged?
         else
           @resources = Resource.all
@@ -13,7 +14,7 @@ module Api
         respond_to do |format|
           format.html # index.html.erb
           format.json { render json: @resources }
-        end      
+        end
       end
 
       def show
