@@ -28,20 +28,22 @@ module Api
       end
 
       def show
-        respond_with Resource.find(params[:id])
+        if ApiKey.where("access_token = ?",params[:api_key]).length >=1
+          respond_with Resource.find(params[:id])
+        end
       end
 
-      def create
-        respond_with Resource.create(params[:Resource])
-      end
+      # def create
+      #   respond_with Resource.create(params[:Resource])
+      # end
 
-      def update
-        respond_with Resource.update(params[:id], params[:Resources])
-      end
+      # def update
+      #   respond_with Resource.update(params[:id], params[:Resources])
+      # end
 
-      def destroy
-        respond_with Resource.destroy(params[:id])
-      end
+      # def destroy
+      #   respond_with Resource.destroy(params[:id])
+      # end
     end
   end
 end
