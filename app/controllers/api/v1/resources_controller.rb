@@ -2,14 +2,24 @@ module Api
   module V1
     class ResourcesController < ApplicationController
       respond_to :json
-
       # return all resources
       def index
-        Rails.logger.info "params.inspect"
-        if params[:tagged]
-          @resources = Resource.tagged?
+        if ApiKey.where("access_token = ?",params[:api_key]).length >=1
+          Rails.logger.info "params.inspect"
+          if params[:tagged]
+            @resources = Resource.tagged?
+
+          elsif params[:common_core]
+            @resources = Resource.where("common_core = ?", params[:common_core])
+          else
+            @resources = Resource.all
+          end
         else
-          @resources = Resource.all
+          if params[:api_key]
+            @resources = {:error => "The api key #{params[:api_key]} is not authorized"}
+          else
+            @resources = {:error => "you must specify an api_key in the request"}
+          end
         end
         respond_to do |format|
           format.html # index.html.erb
